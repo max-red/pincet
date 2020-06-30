@@ -1,0 +1,104 @@
+.overlay
+    display: none
+    position: fixed
+    width: 100%
+    height: 100%
+    top: 0
+    background-color: rgba(0, 0, 0, 0.56)
+    z-index: 4
+    .modal
+        border-radius: 2.6vw
+        border: solid 1px #fbeeef
+        background-color: #fbeeef
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        width: 38.5vw
+        min-height: 34.8vw
+        background-color: #f2f2f2
+        padding: 3.9vw 5.3vw 4.5vw 5.3vw
+        img
+            position: absolute
+            width: 13.7vw
+            height: 20.1vw
+            top: 10vw
+            left: -5vw
+        &__close
+            position: absolute
+            top: 2vw
+            right: 2vw
+            font-size: 1.5vw
+            line-height: 1vw
+            color: #8a97a1
+            cursor: pointer
+        &__subtitle
+            font-size: 1.8vw
+            font-weight: 300
+            text-align: center
+            color: #282828
+            span
+                font-weight: 700
+        &__descr
+            font-size: 0.8vw
+            font-weight: 300
+            text-align: center
+            color: #282828
+            margin-top: 1.2vw
+            margin-bottom: 1.6vw
+        &__form
+            margin: 0 auto
+            margin-top: 0.833vw
+            display: flex
+            flex-direction: column
+            width: 26vw
+            img
+                position: absolute
+                width: 10.4vw
+                height: 2.6vw
+                top: 28vw
+                left: 25vw
+            input
+                margin: 0
+                height: 4.1vw
+                background-color: #ffffff
+                border-radius: 2vw
+                border: none
+                margin-bottom: 0.8vw
+                padding: 1.6vw 2.4vw
+                font-size: 0.9vw
+                font-weight: 300
+                color: #4b4b4b
+                z-index: 2
+                &:focus
+                    outline: none
+            &_mini
+                position: relative
+                width: 27.2vw
+                height: 17.5vw
+                border-radius: 2.6vw
+                border: solid 1px #fbeeef
+                background-color: #ffffff
+                position: absolute
+                left: 50%
+                top: 50%
+                transform: translate(-50%, -50%)
+                padding-top: 7vw
+        &__circle
+            position: absolute
+            display: block
+            width: 4.7vw
+            height: 4.7vw
+            top: 3vw
+            left: 50%
+            transform: translateX(-50%)
+        &__ok
+            position: absolute
+            width: 3.9vw
+            height: 5.2vw
+            top: 9vw
+            right: 0
+#order
+    display: none
+#thanks
+    display: none
